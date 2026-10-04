@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ma Se Muesli | Shop Online</title>
+<meta name="description" content="Shop Ma Se Muesli online. 1kg packs at R80. Explore Plain, Original, Berries, Tropical and Nuts. Contact info@masemuesli.co.za or WhatsApp 061 125 5233.">
+<style>
+:root{--maroon:#6f1638;--gold:#f2bf27;--cream:#fff8e8;--ink:#291b20;--muted:#6f5d64;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
+a{text-decoration:none;color:inherit}.wrap{width:min(1140px,92%);margin:auto}
+.top{background:var(--maroon);color:#fff;text-align:center;padding:9px 12px;font-size:14px}
+nav{position:sticky;top:0;background:#fffdf9;border-bottom:1px solid #eee;z-index:20}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:15px 0;gap:18px}
+.brand{font-family:Georgia,serif;font-weight:700;font-size:24px;color:var(--maroon)}
+.links{display:flex;gap:18px;align-items:center;font-weight:700;font-size:14px}
+.btn{display:inline-block;padding:12px 18px;border-radius:999px;font-weight:800;border:0;cursor:pointer}
+.btn-maroon{background:var(--maroon);color:#fff}.btn-gold{background:var(--gold);color:#3d2712}.btn-outline{border:2px solid var(--maroon);color:var(--maroon);background:#fff}
+.hero{padding:62px 0;background:linear-gradient(135deg,#fff8e9,#fff)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.badge{display:inline-block;background:#fff0b8;padding:7px 12px;border-radius:999px;font-weight:800;font-size:13px}
+h1,h2,h3{font-family:Georgia,serif;color:var(--maroon)}h1{font-size:clamp(42px,7vw,76px);line-height:.98;margin:18px 0}
+.hero p,.lead{color:var(--muted)}.hero p{font-size:19px;max-width:620px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.photo{background:#fff;border:1px solid #eadfd8;border-radius:26px;padding:14px;box-shadow:0 18px 40px #00000014}.photo img{width:100%;border-radius:18px}
+section{padding:66px 0}.alt{background:var(--cream)}h2{font-size:clamp(34px,5vw,50px);margin:0 0 12px}
+.products{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:26px}
+.product{border:1px solid #eadfd8;border-radius:20px;padding:18px;background:#fff;display:flex;flex-direction:column}
+.product img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px;background:#f8f2ed}
+.product h3{margin:14px 0 6px}.price{font-weight:900;font-size:22px;color:var(--maroon);margin:8px 0}.product button{margin-top:auto}
+.shopnote{font-size:13px;color:var(--muted);margin-top:10px}
+.cartbar{position:fixed;right:18px;bottom:18px;z-index:30;background:var(--maroon);color:#fff;padding:14px 18px;border-radius:999px;box-shadow:0 12px 30px #0003;cursor:pointer;font-weight:800}
+.drawer{position:fixed;top:0;right:-440px;width:min(420px,95vw);height:100vh;background:#fff;z-index:50;box-shadow:-18px 0 40px #0002;transition:.25s;padding:22px;overflow:auto}
+.drawer.open{right:0}.drawer-head{display:flex;justify-content:space-between;align-items:center}.cart-item{display:grid;grid-template-columns:1fr auto;gap:10px;padding:14px 0;border-bottom:1px solid #eee}
+.qty{display:flex;gap:8px;align-items:center}.qty button{width:30px;height:30px;border-radius:50%;border:1px solid #ddd;background:#fff;cursor:pointer}
+.total{font-size:23px;font-weight:900;color:var(--maroon);margin:18px 0}
+.checkout{display:none;background:var(--cream);padding:22px;border-radius:18px;margin-top:18px}.checkout.active{display:block}
+.field{margin:12px 0}.field label{display:block;font-weight:700;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;padding:12px;border:1px solid #d8cec8;border-radius:10px;font:inherit}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}.option{border:1px solid #ddd;border-radius:14px;padding:12px;margin:9px 0;background:#fff}
+.summary{background:#fff;border:1px solid #eadfd8;border-radius:16px;padding:15px;margin-top:14px}
+.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}.info{background:#fff;border:1px solid #eadfd8;border-radius:20px;padding:22px}
+.cta{background:var(--maroon);color:#fff;border-radius:24px;padding:30px;display:flex;justify-content:space-between;align-items:center;gap:20px;margin-top:24px}.cta h3{color:#fff;margin:0 0 8px;font-size:29px}
+footer{background:#26141c;color:#fff;padding:32px 0}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.small{font-size:13px;color:#d8c9cf}
+.notice{background:#fff4d6;border:1px solid #efd991;padding:14px;border-radius:12px;color:#5a4316}
+@media(max-width:900px){.links{display:none}.hero-grid{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,1fr)}.info-grid{grid-template-columns:1fr}.grid2{grid-template-columns:1fr}.cta{display:block}.cta .btn{margin-top:12px}}
+@media(max-width:520px){.products{grid-template-columns:1fr}h1{font-size:46px}}
+</style>
+</head>
+<body>
+<div class="top">Ma Se Muesli • Online Shop • WhatsApp 061 125 5233</div>
+<nav><div class="wrap nav">
+<a class="brand" href="#home">Ma Se Muesli</a>
+<div class="links"><a href="#shop">Shop</a><a href="#delivery">Delivery</a><a href="#programme">Affiliate & Reseller</a><a href="#contact">Contact</a></div>
+<button class="btn btn-maroon" onclick="toggleCart()">Cart (<span id="cartCount">0</span>)</button>
+</div></nav>
+
+<header class="hero" id="home"><div class="wrap hero-grid">
+<div>
+<span class="badge">ORDER ONLINE • PAY SECURELY • DELIVER NATIONWIDE</span>
+<h1>Good mornings start here.</h1>
+<p>Choose your Ma Se Muesli flavour, add it to your cart, select your preferred delivery method and complete payment through iKhokha once your merchant integration is connected.</p>
+<div class="actions"><a class="btn btn-maroon" href="#shop">Shop Now</a><a class="btn btn-outline" href="#programme">Join the Programme</a></div>
+</div>
+<div class="photo"><img src="assets/ma-se-muesli-range.png" alt="Ma Se Muesli product range"></div>
+</div></header>
+
+<section id="shop"><div class="wrap">
+<h2>Shop Ma Se Muesli</h2>
+<p class="lead">1kg packs at R80.00 each. Affiliate and reseller opportunities are available through the Ma Se Muesli Programme.</p>
+<div class="products" id="productGrid"></div>
+<p class="shopnote">Delivery is calculated separately according to your selected courier option and destination.</p>
+</div></section>
+
+<section class="alt" id="delivery"><div class="wrap">
+<h2>Delivery options</h2>
+<p class="lead">Choose the delivery method that works best for you during checkout.</p>
+<div class="info-grid">
+<div class="info"><h3>PUDO</h3><p>Locker or pickup-point delivery option. Final pricing and locker selection should be connected to your live PUDO setup.</p></div>
+<div class="info"><h3>PAXI</h3><p>Pickup-point delivery through participating PAXI locations. Final delivery pricing should be confirmed through your active PAXI arrangement.</p></div>
+<div class="info"><h3>The Courier Guy</h3><p>Door-to-door courier delivery. Live rates and address validation can be connected once your courier account/API details are available.</p></div>
+</div>
+</div></section>
+
+<section id="programme"><div class="wrap">
+<h2>Affiliate & Reseller Programme</h2>
+<p class="lead">Ma Se Muesli packs are available at <strong>R80.00 per 1kg pack</strong>. Affiliate and reseller earning structures are confirmed during onboarding.</p>
+<div class="cta">
+<div><h3>Turn your network into an opportunity</h3><div>Send <strong>RESELLER</strong> or <strong>AFFILIATE</strong> to 061 125 5233.</div></div>
+<a class="btn btn-gold" href="https://wa.me/27611255233?text=Hi%20Ma%20Se%20Muesli%2C%20I%20am%20interested%20in%20joining%20the%20Affiliate%20%26%20Reseller%20Programme.">Apply on WhatsApp</a>
+</div>
+</div></section>
+
+<section class="alt" id="contact"><div class="wrap">
+<h2>Contact Ma Se Muesli</h2>
+<p class="lead">For orders, product enquiries, reseller applications, account queries and delivery assistance, contact us using the details below.</p>
+<div class="info-grid">
+  <div class="info">
+    <h3>Orders & General Enquiries</h3>
+    <p><strong>Email:</strong><br><a href="mailto:info@masemuesli.co.za">info@masemuesli.co.za</a></p>
+    <p><strong>WhatsApp:</strong><br><a href="https://wa.me/27611255233">061 125 5233</a></p>
+  </div>
+  <div class="info">
+    <h3>Accounts</h3>
+    <p><strong>Email:</strong><br><a href="mailto:accounts@masemuesli.co.za">accounts@masemuesli.co.za</a></p>
+    <p>For invoices, payment confirmations and account-related queries.</p>
+  </div>
+  <div class="info">
+    <h3>Website</h3>
+    <p><strong>www.masemuesli.co.za</strong></p>
+    <p>Shop online, view our flavours, or learn more about the Ma Se Muesli Affiliate & Reseller Programme.</p>
+  </div>
+</div>
+<div class="cta">
+  <div><h3>Need help with an order?</h3><div>Message us directly on WhatsApp and our team will assist you.</div></div>
+  <a class="btn btn-gold" href="https://wa.me/27611255233?text=Hi%20Ma%20Se%20Muesli%2C%20I%20need%20help%20with%20an%20order.">WhatsApp Us</a>
+</div>
+</div></section>
+
+<footer><div class="wrap foot">
+<div><strong>Ma Se Muesli</strong><div class="small">Good food. Great taste. Local opportunity.</div><div class="small">info@masemuesli.co.za • accounts@masemuesli.co.za • 061 125 5233</div></div>
+<div class="small">© 2026 Ma Se Muesli. All rights reserved.</div>
+</div></footer>
+
+<div class="cartbar" onclick="toggleCart()">🛒 Cart <span id="floatingCount">0</span></div>
+
+<aside class="drawer" id="cartDrawer">
+<div class="drawer-head"><h2 style="font-size:30px">Your cart</h2><button class="btn btn-outline" onclick="toggleCart()">Close</button></div>
+<div id="cartItems"></div>
+<div class="total">Subtotal: R<span id="subtotal">0.00</span></div>
+<button class="btn btn-maroon" style="width:100%" onclick="showCheckout()">Checkout</button>
+
+<div class="checkout" id="checkout">
+<h3>Checkout</h3>
+<div class="notice"><strong>Setup note:</strong> This website includes the checkout flow and iKhokha/delivery selections, but live payment processing and live courier rates require your merchant/account credentials to be connected before launch.</div>
+
+<div class="field"><label>Full name</label><input id="name" required></div>
+<div class="field"><label>Mobile number</label><input id="phone" required></div>
+<div class="field"><label>Email address</label><input id="email" type="email"></div>
+<div class="field"><label>Delivery address / pickup area</label><textarea id="address" rows="3" required></textarea></div>
+
+<div class="field"><label>Delivery method</label>
+<select id="deliveryMethod" onchange="updateSummary()">
+<option value="">Select delivery</option>
+<option value="PUDO">PUDO</option>
+<option value="PAXI">PAXI</option>
+<option value="The Courier Guy">The Courier Guy</option>
+</select></div>
+
+<div class="field"><label>Payment method</label>
+<div class="option"><input type="radio" name="payment" value="iKhokha" checked> <strong>iKhokha</strong><br><span class="small" style="color:#6f5d64">Secure online payment once merchant integration is connected.</span></div>
+</div>
+
+<div class="summary">
+<strong>Order summary</strong>
+<div id="summaryText" style="margin-top:8px"></div>
+</div>
+
+<button class="btn btn-gold" style="width:100%;margin-top:14px" onclick="placeOrder()">Continue to iKhokha</button>
+<p class="shopnote">Until live payment is connected, this button sends the order details to Ma Se Muesli on WhatsApp for manual confirmation.</p>
+</div>
+</aside>
+
+<script>
+const products = [
+ {name:'Plain',price:80,image:'assets/plain-muesli.jpg',description:'A simple, versatile muesli with a clean classic taste — perfect with yoghurt, milk, fresh fruit or your favourite toppings.'},
+ {name:'Original',price:80,image:'assets/original-muesli.jpg',description:'Our classic Ma Se Muesli flavour with a balanced crunch and comforting everyday taste for breakfast or snacking.'},
+ {name:'Berries',price:80,image:'assets/berries-muesli.png',description:'A vibrant berry-inspired muesli with a fruity flavour and colourful crunch — a bright start to your morning.'},
+ {name:'Tropical',price:80,image:'assets/tropical-muesli.jpg',description:'A sunny tropical-style muesli with a lively fruity character — ideal for a fresh, flavourful breakfast bowl.'},
+ {name:'Nuts',price:80,image:'assets/nuts-muesli.jpg',description:'A satisfyingly nutty muesli with a rich, crunchy character — great for customers who enjoy a fuller, hearty bite.'}
+];
+let cart = JSON.parse(localStorage.getItem('msm_cart')||'{}');
+
+function renderProducts(){
+ const grid=document.getElementById('productGrid');
+ grid.innerHTML=products.map((p,i)=>`
+ <div class="product">
+   <img src="${p.image}" alt="Ma Se Muesli ${p.name} 1kg pack">
+   <h3>${p.name}</h3>
+   <p><strong>1kg pack</strong></p>
+   <p>${p.description}</p>
+   <div class="price">R${p.price.toFixed(2)}</div>
+   <button class="btn btn-maroon" onclick="addToCart('${p.name}')">Add to cart</button>
+ </div>`).join('');
+}
+function addToCart(name){cart[name]=(cart[name]||0)+1;save();renderCart();}
+function changeQty(name,delta){cart[name]=(cart[name]||0)+delta;if(cart[name]<=0)delete cart[name];save();renderCart();}
+function save(){localStorage.setItem('msm_cart',JSON.stringify(cart));}
+function getSubtotal(){return Object.entries(cart).reduce((s,[n,q])=>s+(products.find(p=>p.name===n).price*q),0);}
+function renderCart(){
+ const count=Object.values(cart).reduce((a,b)=>a+b,0);
+ document.getElementById('cartCount').textContent=count;document.getElementById('floatingCount').textContent=count;
+ const items=document.getElementById('cartItems');
+ if(!count){items.innerHTML='<p>Your cart is empty.</p>';} else {
+ items.innerHTML=Object.entries(cart).map(([n,q])=>`<div class="cart-item"><div><strong>${n}</strong><br>R80.00 × ${q}</div><div class="qty"><button onclick="changeQty('${n}',-1)">−</button><strong>${q}</strong><button onclick="changeQty('${n}',1)">+</button></div></div>`).join('');
+ }
+ document.getElementById('subtotal').textContent=getSubtotal().toFixed(2);
+ updateSummary();
+}
+function toggleCart(){document.getElementById('cartDrawer').classList.toggle('open');}
+function showCheckout(){if(getSubtotal()<=0){alert('Please add at least one product to your cart.');return;}document.getElementById('checkout').classList.add('active');}
+function updateSummary(){
+ const delivery=document.getElementById('deliveryMethod')?.value || 'Not selected';
+ const lines=Object.entries(cart).map(([n,q])=>`${n} × ${q}`).join(', ') || 'No products';
+ document.getElementById('summaryText').innerHTML=`Products: ${lines}<br>Subtotal: R${getSubtotal().toFixed(2)}<br>Delivery: ${delivery}<br><strong>Delivery fee: to be confirmed</strong>`;
+}
+function placeOrder(){
+ if(getSubtotal()<=0){alert('Your cart is empty.');return;}
+ const name=document.getElementById('name').value.trim();
+ const phone=document.getElementById('phone').value.trim();
+ const address=document.getElementById('address').value.trim();
+ const email=document.getElementById('email').value.trim();
+ const delivery=document.getElementById('deliveryMethod').value;
+ if(!name||!phone||!address||!delivery){alert('Please complete your name, mobile number, address/pickup area and delivery method.');return;}
+ const lines=Object.entries(cart).map(([n,q])=>`${n} x ${q}`).join(', ');
+ const msg=`Hi Ma Se Muesli, I would like to place an online order.%0A%0AName: ${encodeURIComponent(name)}%0AMobile: ${encodeURIComponent(phone)}%0AEmail: ${encodeURIComponent(email)}%0AOrder: ${encodeURIComponent(lines)}%0ASubtotal: R${getSubtotal().toFixed(2)}%0ADelivery: ${encodeURIComponent(delivery)}%0AAddress/Pickup area: ${encodeURIComponent(address)}%0APayment: iKhokha`;
+ window.location.href=`https://wa.me/27611255233?text=${msg}`;
+}
+renderProducts();renderCart();
+</script>
+</body>
+</html>
